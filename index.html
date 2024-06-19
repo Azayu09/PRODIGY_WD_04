@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero" id="home">
+            <div class="hero-content">
+                <img src="profile1.jpeg" alt="Ayush Shinde" class="profile-pic">
+                <div class="hero-text">
+                    <h1>Ayush Shinde</h1>
+                    <p> passionate Web Developer | Designer</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I'm Ayush, currently pursuing a Bachelor's degree in Engineering from Ajeenkya DY Patil College. I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. My journey in web development has equipped me with the skills to create dynamic and responsive websites. I thrive on the challenges and creative opportunities that come with developing innovative web solutions. Looking ahead, I am excited to work on diverse projects that allow me to further hone my skills and contribute to the ever-evolving field of web development.</p>
+        <h3>Education</h3>
+        <p> Currently pursuing Bachelor's Degree in Computer Science from Ajeenkya DY Patil School of Engineering</p>
+        <h3>Professional Experience</h3>
+        <p>Web Developement Intern at Prodigy Infotech - Developed various web applications, ensuring optimal performance and user experience.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project One: Responsive Landing Page</h3>
+            <p>An interactive navigation menu that changes color or style when scrolled or when hovering over a menu item using html,css and javascript.It
+             changes the background color or font color of the menu when it is scrolled or when a menu item is hovered over. </p>
+            <button class="modal-btn" data-modal="modal1">Read More</button>
+        </div>
+        <div class="project">
+            <h3>Project Two: Stopwatch</h3>
+            <p>The stopwatch which contains functions for starting, pausing, and resetting the stopwatch, as well as tracking and displaying lap times,
+             users can accurately measure and record time intervals. </p>
+            <button class="modal-btn" data-modal="modal2">Read More</button>
+        </div>
+        <div class="project">
+            <h3>Project three: A Tic Tac-Toe game</h3>
+            <p> The Tic-Tac-Toe game which handle user clicks, track game state, and check for winning conditions, an interactive and engaging tic-tac-toe game.  </p>
+            <button class="modal-btn" data-modal="modal3">Read More</button>
+        </div>
+        <div class="project">
+            <h3>Project Four: Personal Portfolio Website </h3>
+            <p>An interactive personal portfolio website that showcases your skills, projects, and accomplishments as a web developer. </p>
+            <button class="modal-btn" data-modal="modal1">Read More</button>
+        </div>
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Project One</h2>
+                <p>Detailed project description...</p>
+            </div>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Project Two</h2>
+                <p>Detailed project description...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ayush-s-ba0721201/">LinkedIn</a>
+            <a href="https://github.com/Azayu09">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with &#9829;</p>
+        <p>&copy; 2024 Ayush Shinde. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
